@@ -242,13 +242,10 @@ body.dark-mode {
     background-color: black;
     color: white;
 }
-
-/* Light mode */
 body.light-mode {
     background-color: white;
     color: black;
 }
-/* Khi light mode thì link trong nav sẽ đen */
 body.light-mode nav a {
     color: black;
 }
@@ -259,7 +256,6 @@ body.light-mode nav a.active {
     border-bottom: 3px solid #3564fd;
 }
 
-/* Button trong light mode */
 body.light-mode .btn {
     background-color: white;
     color: #3564fd;
@@ -270,7 +266,6 @@ body.light-mode .btn:hover {
     background-color: #3564fd;
     color: white;
 }
-/* Menu toggle button */
 .menu-toggle {
     display: none;
     font-size: 2.5rem;
@@ -279,22 +274,19 @@ body.light-mode .btn:hover {
     transition: 0.3s ease;
 }
 
-/* Ẩn nav trên mobile, hiển thị khi click */
-/* Nút menu toggle */
 .menu-toggle {
     display: none;
     font-size: 2.5rem;
     color: #3564fd;
     cursor: pointer;
     transition: 0.3s ease;
-    z-index: 200; /* nằm trên nav */
+    z-index: 200; 
 }
 
 .menu-toggle:hover {
     transform: scale(1.2);
 }
 
-/* Hiện nút menu khi ở mobile */
 @media (max-width: 768px) {
     .menu-toggle {
         display: block;
@@ -330,7 +322,6 @@ body.light-mode .btn:hover {
         border-bottom: none;
         color: #3564fd;
     }
-    /* Khi bật light mode, nav mobile sẽ sáng */
     body.light-mode nav {
         background-color: white;
     }
@@ -345,3 +336,4 @@ body.light-mode .btn:hover {
 }
 
 }
+
